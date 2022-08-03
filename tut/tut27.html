@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut27</title>
+    <style>
+        .box {
+            height: 144px;
+            width: 144px;
+            border: 2px dotted black;
+        }
+
+        #box-1 {
+            background-color: aqua;
+        }
+
+        #box-2 {
+            background-color: rgba(255, 0, 0, 0.384);
+            /* display: none;     will hide the space and content*/
+            /* visibility: hidden;  this is only hide content not space*/
+            /* z-index which element come above and blow, higher values above & lower value below */
+            /* (! importent )z-index work on only in position: relative , absulate, flix , sticky */
+            position: relative;
+            top: 120px;
+            z-index: 2;
+        }
+
+        #box-3 {
+            position: relative;
+            z-index: 2;
+            background-color: greenyellow;
+        }
+
+        #box-4 {
+            
+            z-index: -1;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+
+</html>

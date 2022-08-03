@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../images/1.jpg');
+    background-size: 1355px 740px;
+    background-repeat: no-repeat;
+    color: white;
+    /* opacity: 20%; */
+}
+
+.left {
+    /* background-color: aqua; */
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    margin: 5px 72px;
+    color: orange;
+    font-size: 34px;
+
+}
+
+.mid {
+    /* display: block; */
+    border: 2px solid aqua;
+    display: block;
+    margin-top: 20px;
+    /* position: absolute; */
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 20px; */
+    /* right: 30px; */
+
+
+}
+
+.navibar>li {
+
+    display: inline;
+    /* background-color: aqua; */
+    border: 2px solid aqua;
+    
+    
+}
+
+.navibar>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    
+
+}
+
+.navibar>li {
+    margin-right: 2px;
+    margin-left: 2px;
+    /* padding-right: 2px; */
+
+}
+
+.right {
+    position: absolute;
+
+    display: inline-block;
+    top: 30px;
+    right: 30px;
+    /* margin-lef; */
+
+    /* border: 2px solid greenyellow; */
+
+}
+
+input {
+    width: 194px;
+    height: 30px;
+    border: 2px solid orange;
+}
+
+button {
+    width: 86px;
+    height: 30px;
+    margin-left: -3px;
+    background-color: orange;
+    border: 2px solid orange;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.main {
+    border: 2px solid aquamarine;
+    display: inline-block;
+    height: 364px;
+    top: 94px;
+    left: 50px;
+    position: absolute;
+}
+
+.form {
+    border: 2px solid antiquewhite;
+    display: inline-block;
+    height: 364px;
+    top: 94px;
+    right: 50px;
+    position: absolute;
+
+}

@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background-image: url("../Images/boxer.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    font-weight: bold;
+
+}
+
+.left>img {
+    width: 56px;
+    padding-left: 39px;
+    filter: invert(50%);
+    
+}
+
+.mid {
+    /* border: 1px solid rgb(0, 217, 255); */
+    display: block;
+    width: 613px;
+    margin: 20px auto;
+
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    /* border: 2px solid rgb(3, 255, 58); */
+
+}
+
+.btn {
+    padding: 15px;
+    margin-right: 10px;
+    width: 125px;
+    font-weight: bold;
+    border-radius: 31px;
+    border: 2px solid black;
+    font-size: 16px;
+    cursor: pointer;
+
+
+
+
+    /* background-color: yellow; */
+}
+
+.btn:first-child {
+    background-color: rgb(255, 217, 0);
+    color: white;
+}
+
+.btn:first-child:hover {
+    background-color: rgb(245, 167, 0);
+    color: black;
+
+}
+
+.btn:active {
+    /* box-shadow: box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); */
+    transform: translateY(4px);
+}
+
+.navbar {
+    display: inline-block;
+}
+
+ul>li {
+    display: inline-block;
+}
+
+.navbar>li>a {
+    color: #d4d4d4;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    padding: 16px;
+    font-weight: bold;
+
+}
+
+.navbar>li>a:hover,
+.navbar>li>a.active {
+    color: #1f1e1e;
+    text-decoration: underline;
+    background-color: #f0eaea88;
+    transition: background-color 900ms ease, color 900ms ease;
+
+
+}

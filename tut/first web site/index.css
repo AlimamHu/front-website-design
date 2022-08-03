@@ -1,0 +1,33 @@
+pre {
+    color: red;
+    text-align: center;
+    font-family:  Arial, sans-serif;
+  }
+
+h1 {
+    color: aqua;
+    background-color: rgb(216, 225, 233);
+    border-style: dashed;
+    border: 2px;
+    border-color: rgb(39, 49, 46);
+    border-width: 4px;
+}
+
+table{
+    border-style: dashed;
+    background-color: rgb(131, 122, 122);
+}
+tr,th {
+    border-style: double;
+}
+
+nav{
+    border-style: dotted;
+    background-color: rgb(216, 225, 233);
+}
+
+
+footer{
+    border-style: dotted;
+    background-color: rgb(29, 38, 46);   
+}

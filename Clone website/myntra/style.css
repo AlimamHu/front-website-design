@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    margin-left: 24px;
+
+}
+
+.left ul li {
+    display: inline;
+    margin: 7px;
+}
+
+.left img {
+    width: 49px;
+    margin-top: 13px;
+    height: 35px;
+}
+
+
+header .navigation {
+    margin-left: 24px;
+    margin-right: 3px;
+
+
+}
+
+.center_content {
+    margin-left: 24px;
+    margin-right: 3px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    margin: auto;
+    min-width: 80vmin;
+    /* background-color: red; */
+    background-color: #fff7ebd9;
+}
+
+input {
+    width: 150px;
+    height: 25px;
+    margin-top: 20px;
+    /* justify-content: space-around; */
+    margin-left: 258px;
+}
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0.5px;
+    position: sticky;
+    top: 0;
+    background: #fff7eb;
+
+}
+
+
+::selection {
+    background-color: yellow;
+    color: red;
+}

@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.header {
+    border: 2px solid yellow;
+    height: 63px;
+    width: 100vw;
+    background-color: white;
+}
+
+.nav {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+}
+
+#icon_2 {
+    top: 20px;
+    right: 60px;
+}
+
+#icon_1 {
+    top: 20px;
+    left: 48px;
+}
+#icon_1>a>img{
+    width: 33px;
+}
+#icon_2>a>img{
+    width: 30px;
+}
