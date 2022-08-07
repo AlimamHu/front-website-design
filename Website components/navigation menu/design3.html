@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design | 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: black;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 3.5rem;
+            filter: invert(200);
+            margin-left: 33px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+        .logo p {
+            font-weight: 200;
+            margin-left: 1px;
+        }
+
+        .center {
+            flex: 1;
+            text-align: right;
+            margin-right: 54px;
+        }
+
+        .center ul li {
+            display: inline-block;
+        }
+
+        .center ul li a{
+            margin-right: 28px;
+            font-weight: 100;
+            font-family:  serif;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2ms;
+           
+        }
+        .center ul li a:hover,
+        .center>ul>li>a.active{
+            color: rgb(180, 174, 174);
+            text-decoration: underline;
+            transition: background-color 900ms ease, color 900ms ease;
+
+        }
+        
+        .right {
+            margin-right: 20px;
+        }
+
+        .right button {
+            color: black;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 136px;
+            height: 35px;
+
+        }
+        button:active{
+            transform: translateY(4px);
+        }
+        button:first-child{
+            background-color: rgb(255, 196, 0);
+        }
+        button:nth-child(2) {
+            background-color: rgba(236, 236, 236, 0.91);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="black.png">
+                <p>Alimam Hussain</p>
+            </div>
+
+            <div class="center">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#">COUSRE</a></li>
+                    <li><a href="#">PACKAGES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <button type="button">For Primium</button>
+                <button type="button">Email us</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.cantainer {
+    /* background-color: aquamarine; */
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    align-items: center;
+    /* justify-content: space-between;     */
+}
+
+.logo {
+    width: 50px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.menu {
+    cursor: pointer;
+    /* float: right; */
+    /* flex: 1; */
+    width: 35px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav>ul>li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+ul>li>a:hover {
+    color: rgb(153, 65, 65);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%;
+    margin-left: 10%;
+    margin-right: 10%; */
+    margin: 100px 0;
+    /* background-color: blue; */
+}
+
+.col-1 {
+    /* margin-top: 10%; */
+    margin-left: 50px;
+    flex-basis: 40%;
+    position: relative;
+}
+
+.col-1 h2 {
+    font-size: 54px;
+}
+
+.col-1 h3 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    color: rgb(100, 100, 98);
+}
+
+.col-1 p {
+    font-weight: 100;
+    font-size: 16px;
+    color: rgb(175, 175, 174);
+}
+.col-1::after{
+    contain: "";
+    width: 10px;
+    height: 57%;
+    top: 8px;
+    position: absolute;
+    left: -40;
+    background-color: #fb5283;
+}
+
+button {
+
+    width: 140px;
+    color: #fff;
+    outline: none;
+    border: 0;
+    padding: 15px 3px;
+    background: linear-gradient(to right, #fb5283 #ff3527);
+    background-color: red;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: width 0.5s;
+    background: linear-gradient(to right left, rgb(212, 152, 162) red) !important;
+ 
+}
+
+button img {
+    width: 30px;
+    display: none;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* nav>ul{
+    display: flex;
+}
+
+ul>li{
+    list-style: none;
+} */
