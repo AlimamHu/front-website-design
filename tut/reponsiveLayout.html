@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive | Layout of website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 10%;
+            background-color: rgb(165, 100, 39);
+            height: 100%;
+            max-height: 110vh;
+            
+        }
+
+
+        .navbar {
+            width: 100%;
+            height: 35px;
+            /* line-height: 20px; */
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .container2 div {
+            flex-grow: 1;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 2px solid red;
+
+        }
+
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .container3 div {
+            flex-grow: 1;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 2px solid red;
+
+        }
+
+        .container3-withcolum {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .container3-withcolum div {
+            flex-grow: 1;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 2px solid red;
+
+        }
+
+        .footer {
+            width: 100%;
+            max-height: 330px;
+            background-color: rgb(255, 145, 0);
+            /* margin: 0 0 10px; */
+            border: 2px solid black;
+            /* line-height: 5px; */
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <p>navbar</p>
+        </div>
+
+        <div class="container2">
+            <div>box1</div>
+            <div>box2</div>
+        </div>
+
+        <div class="container3-withcolum">
+            <div>box1</div>
+            <div>box2</div>
+            <div>box3</div>
+        </div>
+
+        <div class="container3">
+            <div>box1</div>
+            <div>box2</div>
+        </div>
+
+        <div class="footer">
+            <p>this is status bar</p>
+        </div>
+    </div>
+</body>
+
+</html>

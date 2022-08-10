@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive | Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* color: white; */
+        }
+
+        img {
+            width: 44px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .center {
+            display: flex;
+            padding: 20px 30px;
+            justify-content: space-between;
+        }
+
+        .main {
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-direction: row; */
+        }
+
+        .left {
+            /* background-color: #0a83fc; */
+            background: url(stylish.jpg);
+
+            width: 956.2px;
+            min-height: 650px;
+            /* opacity: 0.7; */
+            /* background-position:center; */
+            background-size: cover;
+            text-align: right;
+            color: black;
+            /* text-shadow: 0 0 4px #ffffff; */
+        }
+
+        .containt {
+            /* border: 2px solid yellow; */
+            float: right;
+            margin: 99px 33px;
+
+        }
+
+        .left p:nth-child(1) {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 100;
+            font-size: 22px;
+        }
+
+        .left h1 {
+            font-size: 46px;
+            font-stretch: 200;
+            font-family: 'Anton', sans-serif;
+            line-height: 100px;
+            font-weight: bolder;
+        }
+
+        .left .end {
+            font-size: 15px;
+            font-weight: 100;
+            font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 70px;
+            text-shadow: 0 0 4px #ffffff;
+
+
+        }
+
+        .left .end a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button {
+            height: 44px;
+            width: 269px;
+            background-color: #555353;
+            border: 2px solid #555353;
+            letter-spacing: 8px;
+            font-weight: bold;
+        }
+
+        .right {
+            background-color: #555353;
+            color: #bbb6b6;
+            width: 465px;
+        }
+
+        .containt2 {
+            /* border: 2px solid yellow; */
+            margin: 400px 30px 100px;
+        }
+
+        .containt2 h1 {
+            font-size: 100px;
+            font-weight: 100;
+        }
+
+        .containt2 p {
+            font-style: italic;
+        }
+
+        .both-side {
+            flex-grow: 1;
+        }
+
+        .footer {
+            background-color: #777575;
+            text-align: center;
+            color: white;
+        }
+        .footer p{
+            padding: 44px 0;
+        }
+        .footer p:nth-last-child(1){
+            font-size: 13px;
+        }
+        @media only screen and (max-width: 818px) {
+            .main {
+                /* display: flex; */
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+
+            .containt2 {
+                margin: 100px 30px 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="center">
+
+            <div class="logo">
+                <img src="love.png" alt="">
+            </div>
+            <div class="menu">
+                <img src="menu.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="left both-side">
+            <div class="containt">
+
+                <p>News, Tips, Trends & Celebrity Style</p>
+                <h1>Men's Style & Fashion</h1>
+                <p class="end">Image by <a href="#">Alimam Hussain</a> .</p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+        <div class="right both-side">
+            <div class="containt2">
+
+                <h1>01</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam maxime placeat, enim illum ipsum
+                    molestiae
+                    magni, facilis unde, voluptas debitis quidem? Doloremque quibusdam labore non tempore. Pariatur a
+                    doloremque dignissimos blanditiis omnis commodi aliquam quam obcaecati quis, nostrum velit,
+                    perspiciatis
+                    soluta saepe. Fugiat, dolores itaque?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Sample text. Click to select the text box. Click again or double <br> click to start editing the text.</p>
+        <p> <a href="#">Template</a> 
+
+            created with <a href="#">Nicepage</a>  . </p>
+    </div>
+</body>
+
+</html>

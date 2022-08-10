@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image | Gallery </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            box-sizing: border-box;
+            display: grid;
+
+            grid-gap: 10px 10px;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+        }
+
+
+
+        .items img {
+            height: 100px;
+            width: 100px;
+        }
+
+        @media only screen and (max-width: 422px) {
+            .container {
+                grid-template-columns: 100px 100px 100px;
+            }
+        }
+
+        @media only screen and (max-width: 299px) {
+            .container {
+                grid-template-columns: 100px 100px;
+            }
+        }
+
+        @media only screen and (max-width: 299px) {
+            .container {
+                grid-template-columns: 100px 100px;
+            }
+        }
+
+        @media only screen and (max-width: 192px) {
+            .container {
+                grid-template-columns: 100px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="items1">
+            <img src="images/1.png" alt="">
+        </div>
+        <div class="items" id="items2"><img src="images/12.png" alt=""></div>
+        <div class="items" id="items3"><img src="images/2.jpg" alt=""></div>
+        <div class="items" id="items4"><img src="images/3.jpg" alt=""></div>
+        <div class="items" id="items5"><img src="images/4.jpg" alt=""></div>
+        <div class="items" id="items6"><img src="images/5.png" alt=""></div>
+        <div class="items" id="items7"><img src="images/6.jpeg" alt=""></div>
+        <div class="items" id="items8"><img src="images/7.jpeg" alt=""></div>
+        <div class="items" id="items9"><img src="images/8.png" alt=""></div>
+        <div class="items" id="items10"><img src="images/9.png" alt=""></div>
+        <div class="items" id="items11"><img src="images/10.jpg" alt=""></div>
+        <div class="items" id="items12"><img src="images/11.jpeg" alt=""></div>
+        <div class="items" id="items13"><img src="images/13.jpeg" alt=""></div>
+    </div>
+</body>
+
+</html>
