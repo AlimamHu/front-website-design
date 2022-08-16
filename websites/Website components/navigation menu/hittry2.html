@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>with hemburgur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 200;
+            color: rgb(63, 53, 53);
+            cursor: pointer;
+        }
+
+        .horizontal {
+            gap: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 20px;
+            background-color: bisque;
+        }
+
+        .right {
+            display: none;
+        }
+
+        .horizontal li:hover {
+            /* font-weight: bold; */
+            color: rgb(0, 0, 0);
+            /* transform: all 0.3s; */
+            transition: all 0.3s;
+        }
+
+        @media screen and (max-width: 498px) {
+
+            /* for virtical bar */
+            /* only show hemburgur */
+
+            .horizontal li:not(:first-child) {
+                display: none;
+            }
+
+            /* this set hemburgur position */
+            .right {
+                display: block;
+                float: right;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                /* position: relative; */
+            }
+
+            /* convert into  virticaly */
+            .horizontal.virtical {
+
+                display: block;
+                text-align: center;
+
+            }
+            .horizontal.virtical li{
+                display: block;
+            }
+
+            li:hover {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- virtical -->
+        <ul class="horizontal " id="topnav">
+            <li class="right" onclick="myFunction()"><i class="fa fa-bars"></i></li>
+            <li>home</li>
+            <li>news</li>
+            <li>contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+
+    <script>
+        function myFunction() {
+            // console.log('this is zone');
+
+            var X = document.getElementById('topnav');
+            if (X.className === "horizontal") {
+                X.className += ' virtical';
+            } else {
+                X.className = 'horizontal';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

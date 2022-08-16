@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR TYR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        ul li {
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 100;
+
+        }
+
+        ul li:hover {
+
+            transition: all 0.3s;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+
+        /* for horizontal navbar */
+
+        .horizontal {
+            display: flex;
+            gap: 33px;
+            background-color: rgb(177, 172, 172);
+            justify-content: center;
+            height: auto;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+
+        }
+
+
+
+        /* for vartical navbar */
+
+        /* display: flex;
+flex-direction: column; */
+        @media screen and (max-width: 498px) {
+            .horizontal.virtical {
+                /* height: 50%; */
+                display: block;
+                box-sizing: border-box;
+                text-align: center;
+                height: auto;
+
+            }
+
+            ul li:hover {
+                background-color: white;
+                /* max-width: 100%; */
+                transition: all 0.3s;
+                color: black;
+
+            }
+
+        }
+
+        /* text-align: right; */
+        h1 {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="horizontal virtical">
+            <li>home</li>
+            <li>news</li>
+            <li>contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <h1> this is a Menu !.</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, quisquam doloremque id reiciendis porro
+        voluptates laudantium quibusdam. Voluptate dolores reiciendis provident. Sint vero voluptatibus quibusdam quasi
+        ratione ex obcaecati repudiandae similique blanditiis ullam quis facilis eum assumenda mollitia illo nam harum,
+        explicabo asperiores nobis maxime delectus laborum voluptates? Sed in aliquid ullam fuga nesciunt? Soluta
+        quibusdam voluptatibus officiis, ut consectetur at. Quas, rerum? Rem unde id error, eligendi illum quas, iure
+        mollitia inventore perferendis tempora temporibus architecto voluptatum. Quo animi voluptates necessitatibus
+        ullam, quaerat eligendi voluptate expedita minus quisquam reiciendis quos magni libero, blanditiis velit
+        asperiores fugit aspernatur, quasi aut nisi ipsa vitae. Iste officia eveniet totam odio! Eius molestiae, tenetur
+        deleniti quaerat temporibus explicabo quis at commodi labore natus excepturi, aspernatur, adipisci id sed quod
+        incidunt est unde? Officia blanditiis debitis aliquid ducimus dignissimos nesciunt dolores voluptas incidunt
+        quas dolorum totam id cupiditate perspiciatis excepturi ab, officiis aut amet ipsum aperiam quidem eveniet
+        praesentium? Nobis autem, distinctio iusto provident nemo, optio voluptatem nisi voluptatibus minima reiciendis
+        blanditiis reprehenderit officiis mollitia. Repellat molestias maxime inventore totam impedit nesciunt delectus
+        quis in omnis possimus laboriosam accusamus enim nisi, hic cum cupiditate non rerum. Aliquid eveniet asperiores
+        veniam sit quidem deserunt mollitia corrupti omnis? Aut officiis ratione velit explicabo eius excepturi a ut
+        repellat exercitationem et similique, totam mollitia officia cupiditate esse ex reprehenderit, ipsa perspiciatis
+        quas quos illo omnis soluta, sunt voluptate. Nobis corrupti deleniti error aspernatur laborum, suscipit sunt,
+        non a fuga quam, possimus odit vero et dicta sint sequi culpa eos illum voluptatum. Vitae officia rem temporibus
+        maiores tempora suscipit, corporis soluta obcaecati quis nam quasi ullam beatae deserunt nostrum a</p>
+</body>
+
+</html>
