@@ -1,0 +1,12 @@
+@mixin flexDaba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin commancomand($par1,$par2) {
+    // letter-spacing: 0.8rem;
+    letter-spacing: $par1;
+    text-transform: $par2;
+}

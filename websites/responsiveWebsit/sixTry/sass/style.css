@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: yellow;
+  color: red;
+}
+
+::selection {
+  background-color: yellow;
+  color: red;
+}
+
+.main_header {
+  display: flex;
+  background-color: white;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.main_header h1 {
+  font-size: 35px;
+  background-color: #ff6918;
+  letter-spacing: 7px;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.main_header h1 span {
+  background-color: rgb(255, 247, 235);
+  color: blue;
+}
+.main_header .navbar {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.main_header .navbar .right {
+  display: none;
+}
+.main_header .navbar li {
+  list-style: none;
+}
+.main_header .navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ff6918;
+  font-weight: 100;
+  font-size: 19px;
+  display: block;
+  cursor: pointer;
+}
+.main_header .navbar li a:hover {
+  text-decoration: underline;
+  transition: all 0.4s;
+}
+
+.landing-page {
+  background-image: url("../images/3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.landing-page .left {
+  padding-left: 50px;
+  padding-top: 100px;
+  width: 535px;
+  height: auto;
+}
+.landing-page .left h1 {
+  color: #ff6918;
+  font-size: 66px;
+  font-family: "Oswald", sans-serif;
+}
+.landing-page .left p {
+  padding-top: 30px;
+  color: gray;
+  font-weight: 100;
+}
+.landing-page .left .submit_section {
+  display: flex;
+  padding: 40px 0;
+}
+.landing-page .left .submit_section input {
+  height: 40px;
+  width: 50%;
+  border: none;
+  text-align: center;
+}
+.landing-page .left .submit_section input:-moz-placeholder-shown {
+  color: black;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.landing-page .left .submit_section input:-ms-input-placeholder {
+  color: black;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.landing-page .left .submit_section input:placeholder-shown {
+  color: black;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.landing-page .left .submit_section button {
+  height: 40px;
+  width: 127px;
+  background-color: #ff6918;
+  border: none;
+}
+.landing-page .left .end_page {
+  padding-bottom: 100px;
+}
+
+.section-1 {
+  padding: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-1 .item {
+  height: 360px;
+  width: 100px;
+  min-width: 300px;
+  flex-wrap: 1;
+  flex-grow: 1;
+  padding: 20px 30px;
+  color: white;
+}
+.section-1 .item h1:first-child {
+  font-size: 50px;
+}
+.section-1 .item h1:first-child span {
+  font-size: 25px;
+}
+.section-1 .item p {
+  font-weight: 100;
+  font-size: 16px;
+}
+.section-1 #item-1 {
+  background-color: rgb(255, 166, 0);
+}
+.section-1 #item-2 {
+  background-color: #ff6801;
+}
+.section-1 #item-3 {
+  background-color: rgb(63, 62, 62);
+}
+.section-1 #item-4 {
+  background-color: gray;
+}
+
+.section-2 {
+  background-color: rgb(219, 218, 218);
+  padding: 80px 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.section-2 .phera {
+  max-width: 75%;
+}
+.section-2 h1 {
+  font-size: 60px;
+  color: #ff6801;
+  font-family: "Oswald", sans-serif;
+}
+.section-2 p {
+  padding: 30px 0;
+  color: rgb(100, 100, 100);
+}
+.section-2 button {
+  height: 48px;
+  width: 213px;
+  background-color: #ff6801;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.section-3 {
+  display: flex;
+  padding: 50px 50px;
+  justify-content: space-between;
+}
+.section-3 .left_text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 100px 40px;
+  text-align: left;
+}
+.section-3 .left_text .heading_1 {
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.section-3 .left_text .heading_2 {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  padding: 0px 0 20px;
+  color: #ff6801;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.section-3 .left_text p {
+  padding: 0px 0px 20px;
+  color: gray;
+  text-transform: capitalize;
+}
+.section-3 .left_text button {
+  padding: 20px 0px;
+  background-color: #ff6801;
+  color: white;
+  border: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-3 .right_image img {
+  width: 600px;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */

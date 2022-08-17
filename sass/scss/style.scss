@@ -1,0 +1,85 @@
+@import "mixin"; // use also called "_mixin | _mixin.scss"
+@import "var";
+
+// sass-css before "css come ' which use as sass
+// scss-css3  non css3 comes so , use scss
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+// 1. operators (+,- ,// / * **)
+// 2. veriables
+// 3. nesting
+// 4. mixing        (like function pease of property again useing so you difine into the varible the property & call the variable)   you can use as many mixing to reducd the line of code
+// 5. Arguments passing in mixing;
+// 6. partials       (this use for make mixing in deffernt file, variable in defferent file soon on .)
+
+html {
+    // font-size: 62.5%;
+    font-size: 10px;
+    // 1rem =10px
+}
+
+.main_header {
+    width: 100vw;
+    height: 100vh;
+    //  this below code again useg so , make mixing
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+
+    // place-items: center;
+    @include flexDaba;
+    background-color: $bg-color;
+
+    //  this nested difine .main_header h1
+    h1 {
+        color: gray;
+        font-size: 5rem+5rem;
+        // letter-spacing: 0.8rem;
+        // @include commancomand;
+        @include commancomand(0.6rem, capitalize);
+
+        //  this nested difine .main_header h1:hover{}
+        &:hover {
+            color: wheat;
+        }
+    }
+
+    // in both h1 and p tag use letter-spacing property same with same values use ther @mixing
+    // now subose we want different-different of letter spacing in word,
+    p {
+        color: black;
+        font-size: 5rem;
+        // letter-spacing: 0.8rem;
+        // @include commancomand;
+        @include commancomand(2rem, uppercase); // this is argument passing into th mixing
+
+        //  this & diffin the "p"
+        &:hover {
+            color: wheat;
+        }
+    }
+}
+
+//  + - ** * / // use as many operators
+
+// h1{
+//     color: gray;
+//     font-size: 5rem  + 5rem;
+// }
+
+// p{
+//     color: gray;
+//     font-size: 5rem  + 5rem;
+// }
