@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+html {
+    font-size: 10px;
+    /* 1rem =10px */
+}
+
+body {
     background-color: #d3cdcd;
 }
 
@@ -16,7 +22,7 @@ body{
     background-color: rgba(128, 128, 128, 0.932);
     height: 60px;
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -25,11 +31,13 @@ body{
 }
 
 .navmenu li {
+    padding: 0 1%;
     list-style: none;
     text-transform: uppercase;
     cursor: pointer;
     color: aliceblue;
     font-weight: bold;
+    font-size: 1.6rem;
 
 }
 
@@ -40,8 +48,9 @@ body{
     transition: all 0.3s;
     /* text-shadow: 0px 0px 4px white; */
 }
-.navmenu li:last-child{
-    color: rgb(63, 3, 3);
+ 
+.navmenu li:last-child {
+    display: none;
 }
 
 
@@ -53,35 +62,40 @@ main {
     gap: 33px;
     flex-direction: column;
 }
+
 main .row {
     display: flex;
     justify-content: center;
 
     gap: 33px;
 }
+
 main .img_block {
- 
+
     text-align: center;
 }
 
 main .img_block img {
-    height: 300px;
-    /* border: 2px solid gray; */
+
+    width: 89%;
+    max-width: 600px;
+
     cursor: pointer;
 
     box-shadow: 5px 10px 20px 1px rgba(36, 31, 21, 0.418);
-    
+
 }
 
-main .img_block:hover{
+main .img_block:hover {
     transition: all 0.3s;
-    transform: scale(1.1);  
+    transform: scale(1.1);
 }
 
 
 
-main .img_block p{
+main .img_block p {
     text-transform: capitalize;
+    font-size: 1.5rem;
 }
 
 /* status bar */
@@ -90,7 +104,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
     padding-top: 150px;
     padding-bottom: 100px;
     background-color: #4a4a4a;
@@ -101,6 +115,7 @@ footer {
 
 footer h1 {
     font-weight: 100;
+    font-size: 3.5rem;
 }
 
 footer h1 .first,
@@ -109,10 +124,35 @@ footer h1 .second {
     font-weight: bold;
 }
 
+footer p {
+    font-size: 1.6rem;
+}
+
 /*   */
 
-@media only screen and (max-width: 944px){
-    main .row{
+@media only screen and (max-width: 944px) {
+    main .row {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .navmenu li {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:664px) {
+    .navbar li:last-child {
+        display: block;
+
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 1.9rem;
+    }
+
+    .navmenu li:not(:last-child) {
+        display: none;
     }
 }

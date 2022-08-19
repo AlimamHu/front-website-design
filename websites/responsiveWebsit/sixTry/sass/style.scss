@@ -16,6 +16,11 @@ $light-orange: rgb(255, 249, 235);
     color: red;
 }
 
+html{
+    font-size: 10px;
+    // 1rem =10px
+}
+
 // header part
 .main_header {
     display: flex;
@@ -28,7 +33,7 @@ $light-orange: rgb(255, 249, 235);
 
 
     h1 {
-        font-size: 35px;
+        font-size: 4.1rem;
         background-color: $font-orange;
         letter-spacing: 7px;
         color: antiquewhite;
@@ -54,13 +59,16 @@ $light-orange: rgb(255, 249, 235);
 
         li {
             list-style: none;
+            &:last-child{
+                display: none;
+            }
 
             a {
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $font-orange;
                 font-weight: 100;
-                font-size: 19px;
+                font-size: 1.7rem;
                 display: block;
                 cursor: pointer;
 
@@ -72,6 +80,19 @@ $light-orange: rgb(255, 249, 235);
             }
         }
     }
+}
+//  this one add the hamburge on header
+@media only screen and (max-width:873px) {
+    .main_header .navbar li:last-child{
+        display: block;
+      
+    }
+    .navbar li:not(:last-child) {
+        display: none;
+ 
+        }
+ 
+
 }
 
 // landing page you call as main page
@@ -94,16 +115,18 @@ $light-orange: rgb(255, 249, 235);
         padding-left: 50px;
         padding-top: 100px;
         // border: 2px solid orange;
-        width: 535px;
+        width: 53%;
+        min-width: 336px;
         height: auto;
 
         h1 {
             color: #ff6918;
-            font-size: 66px;
+            font-size: 7.2rem;
             font-family: 'Oswald', sans-serif;
         }
 
         p {
+            font-size: 1.6rem;
             padding-top: 30px;
             color: gray;
             font-weight: 100;
@@ -115,23 +138,23 @@ $light-orange: rgb(255, 249, 235);
         .submit_section {
             display: flex;
             padding: 40px 0;
-
+max-width: 100%;
             input {
                 height: 40px;
-                width: 50%;
+                width: 100%;
                 border: none;
                 text-align: center;
 
                 &:placeholder-shown {
                     color: black;
-                    font-size: 17px;
+                    font-size: 1.6rem;
                     text-transform: capitalize;
                 }
             }
 
             button {
                 height: 40px;
-                width: 127px;
+                width: 50%;
                 background-color: #ff6918;
                 border: none;
             }
@@ -165,17 +188,17 @@ $light-orange: rgb(255, 249, 235);
         color: white;
 
         h1:first-child {
-            font-size: 50px;
+            font-size: 5.6rem;
 
             span {
-                font-size: 25px;
+                font-size: 2.1rem;
 
             }
         }
 
         p {
             font-weight: 100;
-            font-size: 16px;
+            font-size: 1.6rem;
         }
     }
 
@@ -213,12 +236,13 @@ $light-orange: rgb(255, 249, 235);
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 6.7rem;
         color: #ff6801;
         font-family: 'Oswald', sans-serif;
     }
 
     p {
+        font-size: 1.5rem;
         padding: 30px 0;
         color: rgb(100, 100, 100);
     }
@@ -253,13 +277,13 @@ $light-orange: rgb(255, 249, 235);
 
         .heading_1 {
             padding-top: 50px;
-            font-size: 20px;
+            font-size: 2rem;
             font-weight: 100;
             text-transform: uppercase;
         }
 
         .heading_2 {
-            font-size: 50px;
+            font-size: 5.7rem;
             // font-weight: 100;
             font-family: 'Oswald', sans-serif;
             padding: 0px 0 20px;
@@ -269,6 +293,7 @@ $light-orange: rgb(255, 249, 235);
         }
 
         p {
+            font-size: 1.5rem;
             padding: 0px 0px 20px;
             color: gray;
             text-transform: capitalize;
@@ -281,12 +306,30 @@ $light-orange: rgb(255, 249, 235);
             border: none;
             letter-spacing: 2px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 1.8rem;
         }
     }
 
     .right_image img {
         width: 600px;
         height: auto;
+    }
+}
+
+@media only screen and (max-width:902px) {
+    html{
+        font-size: 50%;
+    }
+    
+}
+@media only screen and (max-width:462px) {
+    
+    html{
+        font-size: 45%;
+        .landing-page .submit_section{
+            flex-direction: column;
+            align-items: center;
+            
+        }
     }
 }

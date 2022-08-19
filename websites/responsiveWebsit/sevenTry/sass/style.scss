@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+    font-size: 10px;
+    // 1rem=10px
+}
+// variable
+$black-backgroun:rgb(10, 0, 102);
+$most-voilt:#6733e2;
+$most-yellow:#f8dd28;
+
+
+// mixing function
+@mixin button_custmize {
+    background-color: $most-yellow;
+            color: $most-voilt;
+            padding: 14px 30px;
+            border: none;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            max-width: 20rem;
+            border-radius: 17px;
+            &:hover{
+                background-color: $most-voilt;
+                color: white;
+            }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color:white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+
+    .logo {
+        cursor: pointer;
+padding: 0 30px;
+        h1 {
+            font-size: 3rem;
+
+            span {
+                color: aliceblue;
+                background-color: $black-backgroun;
+            }
+
+
+        }
+
+        p {
+
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        // gap: 20px;
+
+        li {
+            list-style: none;
+
+
+
+            a {
+
+                display: block;
+                cursor: pointer;
+                text-decoration: none;
+                color: $black-backgroun;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                font-weight: 100;
+                padding: 1.5rem+1.5rem 0.5rem;
+                width: 12rem;
+                text-align: center;
+                border-radius: 4px;
+
+                // &.active{
+                //     background-color: black;
+                //     color: aliceblue;
+                // }
+
+                &:hover {
+                    background-color: $black-backgroun;
+                    color: aliceblue;
+                    transition: all 0.4s;
+                    text-decoration: underline;
+                }
+
+
+            }
+        }
+    }
+}
+
+// leanding page
+main .section-1 {
+    display: flex;
+    color: #6733e2;
+    text-align: left;
+    justify-content: space-around;
+    background: url("../images/bg.jpg");
+    // background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    .container-left {
+        // border: 2px solid #6733e2;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            display: block;
+            padding: 20px 0;
+            font-size: 1.5rem;
+            // color: $most-yellow;
+            
+        }
+
+        button {
+            @include button_custmize;
+        }
+    }
+    .container-right{
+       
+        img{
+            width: 100%;
+            height: auto;
+            min-width: 50rem;
+            // display: flex;
+            // align-items: center;
+            // padding: 7rem 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    html {
+
+        font-size: 50%;
+    }
+}
+// SECTION 2
+.section-2{
+    display: flex;
+    .sumry_2-right{
+        button{
+            @include button_custmize;
+        }
+    }
+}
+
+// only use media 

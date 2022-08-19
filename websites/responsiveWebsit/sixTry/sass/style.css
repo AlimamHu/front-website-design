@@ -15,6 +15,10 @@
   color: red;
 }
 
+html {
+  font-size: 10px;
+}
+
 .main_header {
   display: flex;
   background-color: white;
@@ -26,7 +30,7 @@
   top: 0;
 }
 .main_header h1 {
-  font-size: 35px;
+  font-size: 4.1rem;
   background-color: #ff6918;
   letter-spacing: 7px;
   color: antiquewhite;
@@ -47,12 +51,15 @@
 .main_header .navbar li {
   list-style: none;
 }
+.main_header .navbar li:last-child {
+  display: none;
+}
 .main_header .navbar li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ff6918;
   font-weight: 100;
-  font-size: 19px;
+  font-size: 1.7rem;
   display: block;
   cursor: pointer;
 }
@@ -61,6 +68,14 @@
   transition: all 0.4s;
 }
 
+@media only screen and (max-width: 873px) {
+  .main_header .navbar li:last-child {
+    display: block;
+  }
+  .navbar li:not(:last-child) {
+    display: none;
+  }
+}
 .landing-page {
   background-image: url("../images/3.jpg");
   background-size: cover;
@@ -75,15 +90,17 @@
 .landing-page .left {
   padding-left: 50px;
   padding-top: 100px;
-  width: 535px;
+  width: 53%;
+  min-width: 336px;
   height: auto;
 }
 .landing-page .left h1 {
   color: #ff6918;
-  font-size: 66px;
+  font-size: 7.2rem;
   font-family: "Oswald", sans-serif;
 }
 .landing-page .left p {
+  font-size: 1.6rem;
   padding-top: 30px;
   color: gray;
   font-weight: 100;
@@ -91,31 +108,32 @@
 .landing-page .left .submit_section {
   display: flex;
   padding: 40px 0;
+  max-width: 100%;
 }
 .landing-page .left .submit_section input {
   height: 40px;
-  width: 50%;
+  width: 100%;
   border: none;
   text-align: center;
 }
 .landing-page .left .submit_section input:-moz-placeholder-shown {
   color: black;
-  font-size: 17px;
+  font-size: 1.6rem;
   text-transform: capitalize;
 }
 .landing-page .left .submit_section input:-ms-input-placeholder {
   color: black;
-  font-size: 17px;
+  font-size: 1.6rem;
   text-transform: capitalize;
 }
 .landing-page .left .submit_section input:placeholder-shown {
   color: black;
-  font-size: 17px;
+  font-size: 1.6rem;
   text-transform: capitalize;
 }
 .landing-page .left .submit_section button {
   height: 40px;
-  width: 127px;
+  width: 50%;
   background-color: #ff6918;
   border: none;
 }
@@ -139,14 +157,14 @@
   color: white;
 }
 .section-1 .item h1:first-child {
-  font-size: 50px;
+  font-size: 5.6rem;
 }
 .section-1 .item h1:first-child span {
-  font-size: 25px;
+  font-size: 2.1rem;
 }
 .section-1 .item p {
   font-weight: 100;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .section-1 #item-1 {
   background-color: rgb(255, 166, 0);
@@ -172,11 +190,12 @@
   max-width: 75%;
 }
 .section-2 h1 {
-  font-size: 60px;
+  font-size: 6.7rem;
   color: #ff6801;
   font-family: "Oswald", sans-serif;
 }
 .section-2 p {
+  font-size: 1.5rem;
   padding: 30px 0;
   color: rgb(100, 100, 100);
 }
@@ -205,12 +224,12 @@
 }
 .section-3 .left_text .heading_1 {
   padding-top: 50px;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 100;
   text-transform: uppercase;
 }
 .section-3 .left_text .heading_2 {
-  font-size: 50px;
+  font-size: 5.7rem;
   font-family: "Oswald", sans-serif;
   padding: 0px 0 20px;
   color: #ff6801;
@@ -218,6 +237,7 @@
   letter-spacing: 3px;
 }
 .section-3 .left_text p {
+  font-size: 1.5rem;
   padding: 0px 0px 20px;
   color: gray;
   text-transform: capitalize;
@@ -229,9 +249,24 @@
   border: none;
   letter-spacing: 2px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .section-3 .right_image img {
   width: 600px;
   height: auto;
+}
+
+@media only screen and (max-width: 902px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 462px) {
+  html {
+    font-size: 45%;
+  }
+  html .landing-page .submit_section {
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
