@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Refreser</title>
+    <script>
+        let power = 'ali is god'
+        console.log(power)
+
+        // thisi function call in browser console that must be run
+        function name() {
+            console.log('this is alimam powers')
+        }
+        // inside object have funcction you can call ed
+        const obja = {
+            name: 'pwoer',
+            song: 'indian',
+            zone: function movie() {
+                console.log('go to hell.')
+            }
+        }
+
+
+
+
+        // whene user click on page inside function auto run
+        document.addEventListener("click", function song() {
+            // if user click on page in any where  they was give this values
+            console.log('heyy , you just click here , we just run this function')
+            // this conform funtion take '"True or False"' from ther user
+            const click_on_scree=confirm('ary use sure want to excute the function :')
+            if (click_on_scree) {
+                
+                array_iterration()
+            } else {
+                console.log("i think you are not interstf")
+            }
+            // when user click on page below function run each time
+        })
+
+        // array iteration  accesing one by one values
+        // when page load this code auto run
+        const array_zon = [2, 3, 4, 4, 5, 6, 6]
+
+
+        function array_iterration() {
+
+
+            for (let index = 0; index < array_zon.length; index++) {
+                console.log(array_zon[index])
+
+            }
+        }
+
+
+
+// this array each eliemnt iteration function 
+// if in array this function only run even number. 
+        array_zon.forEach(element => {
+
+            console.log('this iterration by forEach iteration function')
+
+            if (element % 2 == 0) {
+
+                console.log(element)
+            }  
+        });
+// const main_zone=(element)=>console.log(element) (element%2==0)
+
+
+
+
+// this function wait for 3 second and run inside code 
+// this show javascript is block type language
+// like if something waiting or error code pass and excuter next line of code
+
+setTimeout(() => {
+    console.log('finaly 3 second pased')
+}, 3000);
+console.log('this is lass lline')
+    </script>
+</head>
+
+<body>
+    <h1>
+        my zone
+
+    </h1>
+</body>
+
+</html>

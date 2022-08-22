@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  background-color: #3a6ac3;
+  padding: 30px 10px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.main_header .logo h1 {
+  letter-spacing: 3px;
+}
+.main_header ul {
+  display: flex;
+  gap: 20px;
+}
+.main_header ul li {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 100;
+}
+
+.main_body {
+  background-image: url("../images/6.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  position: relative;
+}
+.main_body .main_area {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.main_body .main_area p {
+  font-size: 2rem;
+  color: #919090;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  padding: 10px 0;
+}
+.main_body .main_area h1 {
+  line-height: 107px;
+  padding: 10px 0;
+  font-size: 8.5rem;
+  color: #3a6ac3;
+}
+.main_body .main_area button {
+  padding: 10px 0;
+  height: 45px;
+  width: 208px;
+  border: 2px solid #3a6ac3;
+  border-radius: 34px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: #3a6ac3;
+}
+.main_body .main_area button:hover {
+  background: white;
+  color: #3a6ac3;
+}
+
+.section_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 2%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.section_2 .cards {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  height: 277px;
+  width: 15%;
+  min-width: 150px;
+  max-width: 300px;
+  background-color: #3a6ac3;
+  color: white;
+  border-radius: 51px;
+}
+.section_2 .cards h1 {
+  font-size: 2.9rem;
+}
+.section_2 .cards p {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+.section_3 {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.section_3 .above {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8ef;
+  height: 400px;
+  width: 90vw;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 0 30px 19px #fff8ef;
+}
+.section_3 .above h1 {
+  padding: 15px 0;
+  font-size: 3.6rem;
+  color: #3a6ac3;
+}
+.section_3 .above p {
+  padding: 15px 0 32px;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.section_3 .above button {
+  padding: 10px 0;
+  height: 45px;
+  width: 208px;
+  border: 2px solid #3a6ac3;
+  border-radius: 34px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: #3a6ac3;
+}
+.section_3 .above button:hover {
+  background: white;
+  color: #3a6ac3;
+}
+.section_3 img {
+  width: 80%;
+  min-width: 350px;
+  max-width: 500px;
+  border-radius: 40px;
+  display: inline-block;
+  position: relative;
+  bottom: 80px;
+  left: -1px;
+  box-shadow: 0 0 9px 0.8px rgb(119, 118, 118);
+}
+
+.section_4 {
+  background: url("../images/5.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 89vh;
+  height: 700px;
+}
+.section_4 .inside_box {
+  background-color: white;
+  position: relative;
+  top: 159px;
+  left: 100px;
+  width: 40%;
+  min-width: 249px;
+  height: 50%;
+  max-height: 800px;
+  text-align: left;
+  padding: 40px;
+  border-radius: 54px;
+}
+.section_4 .inside_box h1 {
+  color: #3a6ac3;
+  font-size: 4.8rem;
+}
+.section_4 .inside_box p {
+  padding: 30px 0;
+  color: rgb(49, 49, 49);
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.section_4 .inside_box button {
+  padding: 10px 0;
+  height: 45px;
+  width: 208px;
+  border: 2px solid #3a6ac3;
+  border-radius: 34px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: #3a6ac3;
+}
+.section_4 .inside_box button:hover {
+  background: white;
+  color: #3a6ac3;
+}
+
+footer {
+  background-color: #282828;
+  color: white;
+  display: grid;
+  place-items: center;
+  height: 30vh;
+}
+footer p {
+  font-size: 1.5rem;
+}
+footer p a {
+  color: #043fa8;
+}/*# sourceMappingURL=style.css.map */

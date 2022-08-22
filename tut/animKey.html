@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation | keyframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation-name: background_CHANGE;
+            animation-duration: 7s;
+            animation-iteration-count: 10;
+            
+        }
+        @keyframes background_CHANGE {
+            10%{
+                background-color: white;
+            }
+            20%{
+                background-color: rgb(255, 227, 134);
+            }
+            30%{
+                background-color: rgb(255, 235, 52);
+            }
+            40%{
+                background-color: rgb(255, 136, 0);
+            }
+            50%{
+                background-color: rgb(255, 21, 4);
+            }
+            60%{
+                background-color: rgb(255, 0, 200);
+            }
+            70%{
+                background-color: rgb(10, 0, 97);
+            }
+            80%{
+                background-color: rgb(5, 155, 255);
+            }
+            90%{
+                background-color: rgb(8, 240, 162);
+            }
+            100%{
+                background-color: rgb(165, 252, 5);
+            }
+            
+            
+        }
+
+        .container .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgb(186, 226, 226);
+            background-image: linear-gradient(   rgb(45, 68, 68)  rgb(255, 4, 4));
+             */
+             background: linear-gradient(to right ,white, green);
+            color: white;
+            /* width: 50%;
+            height: 50%; */
+            width: 300px;
+            height: 300px;
+            position: relative;
+            /* animation-name: alimam; */
+            animation-name: alimam2;
+            animation-duration: 2s;
+            animation-iteration-count: 4;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 4s; */
+            animation-direction: reverse;
+            
+        }
+
+        @keyframes alimam2 {
+        0%{
+            top: 0px;
+            left: 0px;
+        }    
+        25%{
+            top: 30px;
+            left: 0px;
+        }
+        50%{
+            top: 30px;
+            left: 30px;
+        }
+        100%{
+            top: 0px;
+            left: 30px;
+        }
+        }
+
+
+       
+        .container .box:hover{
+            transition: all 0.3s;
+            background-color: black;
+            border: 2px solid aqua;
+            color: rgb(52, 102, 102);
+            font-weight: bold;
+            background: linear-gradient(to right , rgb(1, 255, 157),white);
+
+        }
+        .upper_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 20%;
+            background-color: antiquewhite;
+
+            position: relative;
+            /* animation-name: alimam; */
+            animation-name: new_one;
+            animation-duration: 2s;
+            animation-iteration-count: 10;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 4s; */
+            animation-direction: reverse;
+            background-image: linear-gradient(to right, orange, white, aqua,pink,yellow);
+        }
+
+
+        @keyframes new_one {
+            from{
+                width: 500px;
+            }
+            to{
+                width: 700px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper_box"><h1>song</h1></div>
+        <div class="box">
+            <h1>POWER</h1>
+        </div>
+    </div>
+</body>
+
+</html>
