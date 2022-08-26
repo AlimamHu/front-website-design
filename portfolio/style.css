@@ -16,13 +16,15 @@ body {
 .navbar {
     position: sticky;
     top: 0;
+ 
+    z-index: 1;
 }
 
 .navmenu {
     background-color: rgba(128, 128, 128, 0.932);
-    height: 60px;
+ 
     display: flex;
-    /* gap: 20px; */
+ 
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -30,8 +32,9 @@ body {
 
 }
 
-.navmenu li {
-    padding: 0 1%;
+ 
+li {
+    padding: 20px 1%;
     list-style: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -41,15 +44,18 @@ body {
 
 }
 
-.navmenu li:hover {
+ 
+li:hover {
+ 
     color: rgb(0, 0, 0);
     text-decoration: underline;
     transform: scale(1.2);
     transition: all 0.3s;
-    /* text-shadow: 0px 0px 4px white; */
-}
  
-.navmenu li:last-child {
+}
+
+ 
+li:last-child {
     display: none;
 }
 
@@ -57,6 +63,7 @@ body {
 /* main area of body  */
 
 main {
+    z-index: -1;
     padding-top: 100px;
     display: flex;
     gap: 33px;
@@ -87,7 +94,10 @@ main .img_block img {
 }
 
 main .img_block:hover {
+
     transition: all 0.3s;
+    /* box-shadow: inset 0px 0px 10px 6px rgba(219, 214, 214, 0.329); */
+
     transform: scale(1.1);
 }
 
@@ -143,16 +153,39 @@ footer p {
 }
 
 @media only screen and (max-width:664px) {
-    .navbar li:last-child {
+ 
+    .navmenu li {
+        display: none;
+    }
+  
+    .navmenu li:last-child{
+       
         display: block;
-
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 1.9rem;
+ 
+    margin-left: auto;
+padding: 20px;
+font-size: 1.9rem;
+ 
     }
 
-    .navmenu li:not(:last-child) {
-        display: none;
+    .navmenu.vartical {
+        display: block;
+        /* width: 100vw;
+        height: 100vh; */
+    }
+
+    .navmenu.vartical li {
+        display: block;
+        transform: none;
+    }
+
+    .navmenu.vartical li:hover {
+        background-color: aquamarine;
+    }
+    .navmenu.vartical .hamburgur{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 1.9rem;
     }
 }

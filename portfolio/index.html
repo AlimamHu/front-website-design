@@ -15,18 +15,21 @@
 <body>
     <div class="container">
 
+        <!-- navbar -->
         <nav class="navbar">
-            <ul class="navmenu">
+            <ul class="navmenu " id="topbar">
                 <li>home</li>
                 <li>Portfolio</li>
                 <li>resume</li>
                 <li>certifications</li>
                 <li>about me</li>
                 <li id="worning">contact</li>
-                <li class="hamburgur"> <i class="fa fa-bars"></i></li>
+                <li onclick="myfunction()" class="hamburgur"> <i class="fa fa-bars"></i></li>
             </ul>
         </nav>
 
+
+        <!-- main body  -->
         <main>
             <div class="row">
                 <div class="img_block">
@@ -39,6 +42,7 @@
 
                 </div>
             </div>
+
             <div class="row">
                 <div class="img_block">
                     <img src="7.png">
@@ -51,6 +55,7 @@
 
                 </div>
             </div>
+
             <div class="row">
                 <div class="img_block">
                     <img src="5.png">
@@ -63,14 +68,31 @@
 
                 </div>
             </div>
+            
         </main>
 
+
+        <!-- status  -->
         <footer>
             <h1>Pacenat for <b class="first">Learning</b> | <b class="second">Making</b> Things</h1>
 
             <p> this is status bar</p>
         </footer>
+
+
     </div>
+        <script>
+            function myfunction() {
+                let x = document.getElementById("topbar");
+                if (x.className === "navmenu ") {
+                    x.className += " vartical"
+                }
+                else {
+                    x.className = "navmenu "
+                }
+    
+            }
+        </script>
 </body>
 
 </html>

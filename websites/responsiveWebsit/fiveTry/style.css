@@ -1,0 +1,323 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-size: 10px;
+     /* 1rem=10px */
+ }
+
+ ::selection {
+     background-color: yellow;
+ }
+
+ .container {
+
+
+     width: 100%;
+     height: 100vh;
+     /* overflow: hidden; */
+ }
+
+ header {
+     /* border: 2px solid red; */
+     width: 100%;
+     padding: 10px 3%;
+     position: sticky;
+     top: 0;
+     right: 0;
+     display: flex;
+
+     justify-content: space-between;
+     align-items: center;
+
+     /* background-color: rgba(117, 63, 155, 0.41); */
+     background-color: rgb(50, 3, 83);
+     ;
+ }
+
+ .logo img {
+     height: 40px;
+     cursor: pointer;
+ }
+
+ .navbar {
+     display: flex;
+     gap: 14px;
+     /* box-sizing: border-box; */
+ }
+
+ ul li {
+     list-style: none;
+ }
+
+ ul li a {
+     text-decoration: none;
+     color: white;
+     font-weight: 100;
+     font-size: 1.4rem;
+ }
+
+ ul li a:hover {
+     transition: all 0.5s;
+     /* font-weight: bold; */
+     color: #10e9ff;
+     text-decoration: underline;
+     transform: scale(1.1);
+
+ }
+
+ ul li a.active,
+ ul li a:focus {
+     text-decoration: underline;
+ }
+
+ .icon {
+     display: none;
+ }
+
+ /* main area css  */
+
+ .mainbody {
+
+     background: url('bg.jpg');
+     height: 600px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* background-position: center; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* padding: 30vh 20% 10vh; */
+     padding-top: 30vh;
+     padding-bottom: 10vh;
+ }
+
+ .mainbody h1 {
+     color: #82129c;
+     /* font-size: 70px; */
+     font-weight: 100;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 7rem;
+     letter-spacing: 2rem;
+
+ }
+
+ .mainbody h1>span {
+     font-weight: bold;
+     color: #10e9ff;
+ }
+
+ .mainbody p {
+     padding: 20px 0;
+     color: rgb(70, 72, 73);
+     font-weight: 100;
+     text-shadow: 0 0 2px rgb(70, 72, 73);
+     font-size: 2rem;
+
+ }
+
+ .buttons {
+     display: flex;
+     gap: 1rem;
+ }
+
+ button {
+     border: 2px solid aqua;
+     font-weight: bold;
+     background-color: rgba(0, 0, 0, 0.616);
+     border-radius: 2px;
+     height: 41px;
+     width: 169px;
+     color: aqua;
+     letter-spacing: 0.2rem;
+
+ }
+
+ button:hover {
+     background-color: #10e9ff;
+     color: black;
+     cursor: pointer;
+     transition: all 0.3s;
+     box-shadow: 2px 0 rgb(2, 252, 252);
+ }
+
+ /* section main body 2 */
+
+
+ .container section .upper {
+
+     width: 100vw;
+     height: 500px;
+     background: url('./1.jpg');
+     /* background-attachment: fixed; */
+     background-position: 50% 50%;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0px 20px;
+     /* gap: 20px; */
+
+     /* margin: auto; */
+ }
+
+ .container section .upper .outer_box {
+
+     display: flex;
+ }
+
+ .container section .upper .outer_box .cards {
+     background-color: white;
+     /* border: 2px solid black; */
+     height: 350px;
+     width: 270px;
+     margin: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     text-align: center;
+     text-transform: uppercase;
+
+     font-family: Montserrat, sans-serif;
+     box-shadow: 2px 2px 9px 4px rgba(75, 75, 75, 0.64);
+
+
+ }
+
+ .container section .upper .outer_box .cards.down {
+     position: relative;
+     bottom: -246px;
+ }
+
+ .container section .upper .outer_box .cards.up {
+     position: relative;
+     bottom: -146px;
+ }
+
+ .container section .upper .outer_box .cards i {
+     color: pink;
+     font-size: 60px;
+     /* padding: ; */
+     border: 2px solid rgb(255, 28, 160);
+     width: 78px;
+     border-radius: 50%;
+     height: 76px;
+     padding: 5px;
+     align-content: center;
+     /* text-align: center; */
+     background-color: rgb(255, 28, 160);
+ }
+
+ .container section .upper .outer_box .cards h1 {
+     letter-spacing: 1px;
+     font-size: 30px;
+     padding: 10px 0;
+
+ }
+
+ .container section .upper .outer_box .cards p,
+ a {
+     padding: 10px 0;
+     font-size: 16px;
+     font-weight: 100;
+     text-transform: capitalize;
+     color: rgb(70, 70, 70);
+
+ }
+
+ .container section .upper .outer_box .cards a {
+     text-transform: uppercase;
+ }
+
+ .container section .lower {
+
+     box-sizing: border-box;
+
+     width: 100vw;
+     height: 200px;
+     background-color: #f474ae;
+     /* background-attachment: fixed; */
+ }
+
+
+ /* why this not is  status bar */
+ footer{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: #333333;
+}
+footer p{
+    color: #f474ae;
+    font-size: 1.6rem;
+    
+}
+footer p a{
+    color: #00ffec;
+    text-transform: uppercase;
+}
+
+ /*  for responsive fonts secontions */
+ @media only screen and (max-width: 914px) {
+     html {
+         font-size: 50%;
+     }
+
+ }
+
+ @media only screen and (max-width: 798px) {
+     html {
+         font-size: 45%;
+     }
+
+ }
+
+ /* there menu into hemburger */
+
+ @media only screen and (max-width: 722px) {
+     html {
+         font-size: 30%;
+     }
+
+
+     .icon {
+         display: block;
+         font-size: 35px;
+         /* background-color: black; */
+         color: black;
+     }
+
+     .navbar {
+         display: none;
+     }
+
+     .navbar.responsive {
+         /* position: relative; */
+         display: flex;
+         flex-direction: column;
+         /* top: 100px; */
+     }
+
+
+ }
+
+ /* this is for phones fontsizes */
+ @media only screen and (max-width: 422px) {
+     html {
+         font-size: 20%;
+     }
+ }
+
+ @media only screen and (max-width: 276px) {
+     html {
+         font-size: 15%;
+     }
+ }

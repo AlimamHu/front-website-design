@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar | with responsive disgn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .navber {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(224, 255, 255);
+        }
+
+        li {
+            list-style: none;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        li:hover {
+            background-color: aqua;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        li:first-child {
+            display: none;
+        }
+
+      
+    h1{
+        /* border: 2px solid red; */
+        margin: auto;
+        width: 500px;
+        text-transform: uppercase;
+        /* display: inline-block; */
+    }
+
+        @media screen and (max-width: 554px) {
+            .navber li {
+                display: none;
+            }
+
+            .navber li:first-child {
+                display: block;
+          
+            }
+
+            .navber.vartical {
+                position: absolute;
+                top: 0;
+                height: 100vh;
+                min-height: 309px;
+                width: 100vw;
+                transition: all 0.4s ease;
+                display: block;
+                /* left: 0%; */
+            }
+         
+            .navber.vartical li {
+                
+                display: block;
+                /* text-align: center; */
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navber " id="topbar">
+        <li onclick="myfunction()">menu</li>
+        <li>home</li>
+        <li>contact us</li>
+        <li>about us</li>
+        <li>service</li>
+    </ul>
+    <h1>thi is main containet</h1>
+    <script>
+        function myfunction() {
+            let x = document.getElementById("topbar");
+            if (x.className === "navber ") {
+                x.className += " vartical"
+            }
+            else {
+                x.className = "navber "
+            }
+
+        }
+    </script>
+</body>
+
+</html>
