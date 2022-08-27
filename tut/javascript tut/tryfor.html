@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop down</title>
+    <style>
+        .container{
+            /* border: 2px solid red; */
+position: relative;
+        }
+        p {
+            border: 2px solid rebeccapurple;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        p:first-child{
+            
+            border-radius: 3px;
+        }
+        
+        #hiden_menu{
+            display: none;
+            background-color: rebeccapurple;
+            width: 15%;
+             width: 200px;
+            position: absolute;
+            top: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <p id="menu" onmouseenter="dropdown()" onmouseout="hide_drop()">this is menu</p>
+        <p id="hiden_menu">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, aperiam delectus numquam
+            error dolor enim eum soluta illum culpa adipisci!</p>
+            <h1>powert</h1>
+    </div>
+    <script>
+
+        function dropdown() {
+            let x = document.getElementById("menu")
+            document.getElementById("hiden_menu").style.display = "block"
+        }
+        function hide_drop() {
+            let x = document.getElementById("menu")
+            document.getElementById("hiden_menu").style.display = "none"
+        }
+    </script>
+</body>
+
+</html>

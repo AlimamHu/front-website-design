@@ -8,7 +8,7 @@
     <title>Portfolio | Best Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 
 </head>
 
@@ -28,9 +28,21 @@
             </ul>
         </nav>
 
+        <main class="landing_page">
 
+            <div class="landing_left">
+                <h4>about me.</h4>
+                <h1>Alimam husain</h1>
+                <p>love to learning and making new stufle by my coding skills</p>
+                <button class="btn_style" type="button">CONTACT ME</button>
+
+            </div>
+            <div class="landing_right">
+                <img src="./but2.jpeg" alt="">
+            </div>
+        </main>
         <!-- main body  -->
-        <main>
+        <main class="body_2">
             <div class="row">
                 <div class="img_block">
                     <img src="1.png">
@@ -68,7 +80,7 @@
 
                 </div>
             </div>
-            
+
         </main>
 
 
@@ -81,18 +93,22 @@
 
 
     </div>
-        <script>
-            function myfunction() {
-                let x = document.getElementById("topbar");
-                if (x.className === "navmenu ") {
-                    x.className += " vartical"
-                }
-                else {
-                    x.className = "navmenu "
-                }
-    
+
+
+
+
+    <script>
+        function myfunction() {
+            let x = document.getElementById("topbar");
+            if (x.className === "navmenu ") {
+                x.className += " vartical"
             }
-        </script>
+            else {
+                x.className = "navmenu "
+            }
+
+        }
+    </script>
 </body>
 
 </html>
