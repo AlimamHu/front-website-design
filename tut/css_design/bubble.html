@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>water | buble</title>
+    <style>
+        body {
+            /* background-color: black; */
+            box-sizing: border-box;
+            animation: bacground_change 4s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+        }
+@keyframes bacground_change {
+    0%{
+        background-color: yellow;
+    }
+    10%{
+        background-color: rgb(69, 209, 34);
+    }
+    20%{
+        background-color: rgb(46, 150, 89);
+    }
+    30%{
+        background-color: rgb(48, 57, 110);
+    }
+    40%{
+        background-color: rgb(102, 53, 86);
+    }
+    50%{
+        background-color: rgb(77, 43, 80);
+    }
+    70%{
+        background-color: rgb(82, 23, 31);
+    }
+}
+        .coverof {
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            transform: translateY(-1000%);
+            animation: bubble_drop 4s infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in;
+        }
+
+        img:nth-child(1) {
+            width: 20px;
+            height: 20px;
+            animation-delay: 0.3s;
+
+
+        }
+
+        img:nth-child(2) {
+            width: 90px;
+            height: 90px;
+            animation-delay: 1s;
+
+
+        }
+
+        img:nth-child(3) {
+            width: 200px;
+            animation-delay:0.4s;
+
+        }
+
+        img:nth-child(4) {
+            width: 150px;
+            height: 150px;
+            animation-delay: 1.1s;
+        }
+
+        @keyframes bubble_drop {
+            0% {
+                transform: translateY(0%);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+                /* transform: translateY(30%); */
+            }
+
+            40% {
+                /* transform: translateY(30%); */
+                opacity: 2;
+
+            }
+
+            50% {
+                opacity: 4;
+
+                transform: translateY(500%);
+            }
+            100%{
+                opacity: 9;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="coverof">
+
+            <img src="./images/bubble.png" alt="">
+            <img src="./images/bubble.png" alt="">
+            <img src="./images/bubble.png" alt="">
+            <img src="./images/bubble.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

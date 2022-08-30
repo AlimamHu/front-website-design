@@ -1,0 +1,88 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    // 1rem=10px
+}
+
+$font_style: 'Gotham', sans-serif;
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 24px;
+    text-transform: uppercase;
+
+   .center_nav,.right_nav {
+        display: flex;
+
+        li {
+            list-style: none;
+            font-family: 'Gotham Black', sans-serif;
+            font-family: $font_style;
+            // font-family: 'Gotham Light', sans-serif;
+            // font-family: 'Gotham Thin', sans-serif;
+            // font-family: 'Gotham XLight', sans-serif;
+            // font-family: 'Gotham Book', sans-serif;
+            // font-family: 'Gotham Ultra', sans-serif;
+
+
+            a {
+                text-decoration: none;
+                padding: 10px;
+                font-size: 1.4rem;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                // background-color: aliceblue;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 115px;
+        }
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .navbar .center_nav,.navbar .right_nav li:not(:last-child){
+        display: none;
+    }
+    .navbar .right_nav li .menu{
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: block;
+         background-color: rgba(240, 248, 255, 0.432);
+        //  border-radius: 30px;
+    }
+    .navbar {
+position: relative;
+        .vartical{
+            display: block;
+            position: absolute;
+            background-color:rgb(122, 79, 79);
+            color: black;
+height: 100vh;
+// width: 80vw;
+// width: 20%;
+// min-width: 400px;
+top: 24px;
+right: 24px;
+        }
+    }
+}
+
+ 

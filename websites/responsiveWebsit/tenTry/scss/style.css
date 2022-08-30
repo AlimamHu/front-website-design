@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.toggle {
+  position: fixed;
+  top: 33px;
+  right: 36px;
+  background-color: black;
+  width: 51px;
+  height: 51px;
+  text-align: center;
+}
+.toggle i {
+  font-size: 33px;
+  color: white;
+  margin-top: 9px;
+}
+
+.toggle.active {
+  background-color: white;
+}
+.toggle.active i {
+  color: rgb(3, 3, 3);
+}
+
+.banner {
+  padding: 100px;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+.banner .imgSidebar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+}/*# sourceMappingURL=style.css.map */

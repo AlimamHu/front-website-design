@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    // 1rem=10px
+}
+.toggle{
+    position: fixed;
+    top: 33px;
+    right: 36px;
+    background-color: black;
+    width: 51px;
+    height: 51px;
+    text-align: center;
+    i{
+        font-size: 33px;
+        color: white;
+        margin-top: 9px;
+        
+    }
+}
+.toggle.active{
+    background-color: white;
+    i{
+        color: rgb(3, 3, 3);
+    }
+}
+
+.banner{
+    padding: 100px;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    // display: flex;
+    .imgSidebar{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        min-height: 100vh;
+        img{
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // width: 500%;
+            // height: 100%;
+            // object-fit: cover;
+        }
+    }
+}

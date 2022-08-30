@@ -214,6 +214,7 @@ html {
   display: flex;
   padding: 50px 50px;
   justify-content: space-between;
+  align-items: center;
 }
 .section-3 .left_text {
   display: flex;
@@ -251,14 +252,43 @@ html {
   font-weight: bold;
   font-size: 1.8rem;
 }
+.section-3 .right_image {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
 .section-3 .right_image img {
-  width: 600px;
-  height: auto;
+  width: 70%;
+  min-width: 400px;
+}
+
+footer {
+  background-color: #ff6801;
+  height: 300px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+footer h1 {
+  font-size: 5rem;
+}
+footer p {
+  font-size: 1.6rem;
+  width: 70%;
 }
 
 @media only screen and (max-width: 902px) {
   html {
     font-size: 50%;
+  }
+}
+@media only screen and (max-width: 860px) {
+  html .section-3 {
+    flex-direction: column-reverse;
+  }
+  html .section-3 .left_text {
+    min-width: 320px;
   }
 }
 @media only screen and (max-width: 462px) {

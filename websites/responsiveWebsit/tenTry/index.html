@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second | Portfolo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+
+</head>
+
+<body>
+    <div class="toggle" onclick="Togle()"><i class="fa fa-bars"></i></div>
+
+    <section class="banner">
+        <div class="imgSidebar">
+            <img src="./model.jpg" alt="">
+        </div>
+        <div class="contenBx">
+
+            <h5 class="logoText">My_Portfolio</h5>
+            <div>
+
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Alimam Husain</h2>
+                <h4>I'm a Front End Web Developer</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus consequuntur quia nobis ipsum
+                    atque eaque reprehenderit voluptas mollitia eligendi possimus sunt adipisci. Perspiciatis mollitia
+                    illum sunt ducimus inventore in!
+                    Similique aut sapiente commodi! Libero tempora sequi delectus non nulla quia distinctio ut
+                    praesentium placeat, eaque omnis, aperiam iste doloremque atque repudiandae ducimus consequuntur
+                    consectetur provident dolore numquam doloribus! Exercitationem.</p>
+                <a href="#" class="btn">about me</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        function Togle() {
+            const menuToggle = document.querySelector(".toggle")
+            //  when click on toogle add "active" in class
+            menuToggle.classList.toggle("active")
+
+
+        }
+    </script>
+</body>
+
+</html>

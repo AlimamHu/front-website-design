@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -6,7 +7,10 @@
     /* font-family: 'DynaPuff', cursive; */
     box-sizing: border-box;
 }
-
+::selection{
+    background-color: yellow;
+    color: red;
+}
 html {
     font-size: 10px;
     /* 1rem =10px */
@@ -64,27 +68,28 @@ li:last-child {
 
 /* landing page */
 .landing_page {
-    height: 550px;
+    /* minheight: 550px; */
     background-color: #4a4a4a;
     /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* align-items: center; */
-    overflow: hidden;
-    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
 
 .landing_page img {
-    position: absolute;
+    /* position: absolute;
     top: 30px;
-    right: 100px;
+    right: 100px; */
     display: block;
     /* border: 2px solid black; */
     object-fit: cover;
     border-radius: 100%;
-    width: 400px;
-    height: 412px;
+    width: 70%;
+    min-width: 300px;
+    height: 75%;
 
     box-shadow: 0 0 20px 10px #878883, 0 0 20px 15px #717170ad, 0 0 20px 42px #71717066;
 
@@ -95,14 +100,16 @@ li:last-child {
 
 
 .landing_page .landing_left {
-    /* border: 2px solid red; */
+    padding-left: 40px;
+    border: 2px solid red;
     font-family: 'DynaPuff', cursive;
+    width: 40%;
 }
 
 .landing_page .landing_left h4 {
     margin: 10px 0px 3px;
     color: #1a1a1a;
-    font-size: 24px;
+    font-size: 2.4rem;
     text-transform: uppercase;
     font-weight: 100;
 
@@ -110,7 +117,7 @@ li:last-child {
 }
 
 .landing_page .landing_left h1 {
-    font-size: 53px;
+    font-size: 5.3rem;
     text-transform: uppercase;
     padding: 20px 0;
     font-weight: bolder;
@@ -119,7 +126,7 @@ li:last-child {
 .landing_page .landing_left p {
     color: #1a1a1a;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 1.7rem;
     padding: 20px 0;
 }
 
@@ -138,6 +145,113 @@ li:last-child {
 .landing_page .landing_left button:hover {
     cursor: pointer;
 
+}
+
+
+@media only screen and (max-width:650px) {
+    .landing_page{
+       flex-direction: column;
+    }
+    .landing_left{
+        margin: auto;
+        width: auto;
+    }
+}
+@media only screen and (max-width:590px){
+
+}
+/* SKILL SECTION */
+ .skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+ }
+ 
+ .skills .about_me{
+    width: 40%;
+ }
+ .skills .about_me h1{
+    font-size: 37px;
+text-transform: uppercase;
+}
+.skills .about_me p{
+    
+    font-size: 20px;
+    color: #262626;
+ }
+  /* Applying CSS to sphere */
+ .tagcloud {
+   display: inline-block;
+   /* top: 100px;
+   left: 10%; */
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-family: 'Bebas Neue', cursive;
+   font-size: 21px;
+ }
+ 
+ /* Change color of each text in sphere on hover   */
+ .tagcloud--item:hover {
+   color: #806304 ;
+ }
+
+ /* few project */
+ .project{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+
+ }
+ .project div{
+    height: 257px;
+    width: 274px;
+    /* border: 2px solid #1a1a1a; */
+ }
+.preview img{
+    width: 300px;
+}
+ /* details */
+ .details{
+    display: flex;
+    background-color: white;
+ }
+ .details .map iframe{
+    width: 500px;
+    margin: 20px;
+    margin-left: 30px;
+ }
+/*  contact */
+.contact{
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact h1{
+    font-size: 37px;
+}
+.contact p{
+    width: 50%;
+    font-size: 17px;
+    color: #4a4a4a;
+}
+
+.contact input{
+    height: 32px;
+width: 400px;
+}
+.contact textarea{
+    width: 400px;
+    height: 144px;
+}
+.contact button{
+    display: inline-block;
 }
 
 /* main area of body  */

@@ -16,7 +16,7 @@ $light-orange: rgb(255, 249, 235);
     color: red;
 }
 
-html{
+html {
     font-size: 10px;
     // 1rem =10px
 }
@@ -59,7 +59,8 @@ html{
 
         li {
             list-style: none;
-            &:last-child{
+
+            &:last-child {
                 display: none;
             }
 
@@ -81,17 +82,19 @@ html{
         }
     }
 }
+
 //  this one add the hamburge on header
 @media only screen and (max-width:873px) {
-    .main_header .navbar li:last-child{
+    .main_header .navbar li:last-child {
         display: block;
-      
+
     }
+
     .navbar li:not(:last-child) {
         display: none;
- 
-        }
- 
+
+    }
+
 
 }
 
@@ -138,7 +141,8 @@ html{
         .submit_section {
             display: flex;
             padding: 40px 0;
-max-width: 100%;
+            max-width: 100%;
+
             input {
                 height: 40px;
                 width: 100%;
@@ -265,6 +269,10 @@ max-width: 100%;
     display: flex;
     padding: 50px 50px;
     justify-content: space-between;
+    align-items: center;
+
+    // gap:    108px;
+
 
     .left_text {
         display: flex;
@@ -310,26 +318,75 @@ max-width: 100%;
         }
     }
 
-    .right_image img {
-        width: 600px;
-        height: auto;
+    .right_image {
+
+        display: flex;
+        justify-content: center;
+
+        box-sizing: border-box;
+
+        //    border: 2px solid red;
+        img {
+
+            //    border: 2px solid yellow;
+            width: 70%;
+            min-width: 400px;
+
+        }
     }
 }
 
+footer {
+    background-color: #ff6801;
+    height: 300px;
+    width: 100%;
+
+
+    // align-content: center;
+    display: grid;
+    place-items: center;
+text-align: center;
+    h1 {
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.6rem;
+        width: 70%;
+        // min-width: 6
+    }
+
+}
+
 @media only screen and (max-width:902px) {
-    html{
+    html {
         font-size: 50%;
     }
-    
+
 }
+
+@media only screen and (max-width:860px) {
+    html {
+
+        .section-3 {
+
+            flex-direction: column-reverse;
+
+            .left_text {
+                min-width: 320px
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:462px) {
-    
-    html{
+
+    html {
         font-size: 45%;
-        .landing-page .submit_section{
+
+        .landing-page .submit_section {
             flex-direction: column;
             align-items: center;
-            
+
         }
     }
 }

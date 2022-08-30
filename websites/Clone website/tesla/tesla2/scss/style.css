@@ -1,0 +1,65 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 24px;
+  text-transform: uppercase;
+}
+.navbar .center_nav, .navbar .right_nav {
+  display: flex;
+}
+.navbar .center_nav li, .navbar .right_nav li {
+  list-style: none;
+  font-family: "Gotham Black", sans-serif;
+  font-family: "Gotham", sans-serif;
+}
+.navbar .center_nav li a, .navbar .right_nav li a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 30px;
+}
+.navbar .logo img {
+  width: 115px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .navbar .center_nav, .navbar .right_nav li:not(:last-child) {
+    display: none;
+  }
+  .navbar .right_nav li .menu {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.432);
+  }
+  .navbar {
+    position: relative;
+  }
+  .navbar .vartical {
+    display: block;
+    position: absolute;
+    background-color: rgb(122, 79, 79);
+    color: black;
+    height: 100vh;
+    top: 24px;
+    right: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */
