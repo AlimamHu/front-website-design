@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +38,7 @@
 
 
 
-    <main class="landing-page">
+    <main   class="landing-page">
         <div class="left">
 
             <h1>
@@ -59,7 +61,8 @@
         </div>
     </main>
 
-    <section class="section-1">
+    <section  class="section-1">
+        <!-- data-aos="fade-right" -->
         <div class="item" id="item-1">
             <h1>
                 01
@@ -76,7 +79,7 @@
             </p>
         </div>
 
-        <div class="item" id="item-2">
+        <div   class="item" id="item-2">
             <h1>
                 01
                 <br>
@@ -91,7 +94,8 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
             </p>
         </div>
-        <div class="item" id="item-3">
+
+        <div    class="item" id="item-3">
             <h1>
                 01
                 <br>
@@ -106,7 +110,9 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
             </p>
         </div>
-        <div class="item" id="item-4">
+
+        <!-- data-aos="fade-left" -->
+        <div  class="item" id="item-4">
             <h1>
                 01
                 <br>
@@ -123,8 +129,8 @@
         </div>
     </section>
 
-
-    <section class="section-2">
+    <!-- data-aos="slide-up" -->
+    <section  class="section-2">
         <div class="phera">
 
             <h1>We are sustainable construction
@@ -141,6 +147,7 @@
 
     <section class="section-3">
 
+        <!-- data-aos="fade-right" -->
         <div class="left_text">
             <h1 class="heading_1">create your</h1>
             <h1 class="heading_2">Dream Home</h1>
@@ -150,20 +157,31 @@
             </p>
             <button>START NOW</button>
         </div>
-
-        <div class="right_image">
+        <!-- data-aos="fade-left" -->
+        <div class="right_image" >
             <img src="./images/7.jpg">
         </div>
     </section>
-    <footer>
-     
 
-            <h1>Song is powerfull person</h1>
+    <footer >
+     
+        <!-- data-aos="fade-left" -->
+            <h1 >Song is powerfull person</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint assumenda reiciendis ipsam repellendus
                 autem optio iusto! Molestiae perspiciatis consequatur laborum quo amet optio recusandae quos, voluptas
                 ullam suscipit id assumenda!</p>
      
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 220,
+        // once:true,
+        duration: 1000,
+        anchorPlacement: ['top-bottom','bottom-top'],
+      });
+    </script>
 </body>
 
 </html>
