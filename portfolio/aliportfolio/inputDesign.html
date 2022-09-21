@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1d2b3a;
+            gap: 30px;
+        }
+
+        .inbox {
+            width: 250px;
+            position: relative;
+        }
+
+        .inbox input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgb(151, 151, 151);
+            background-color: #1d2b3a;
+            border-radius: 5px;
+
+            outline: none;
+            color: white;
+            font-size: 1em;
+        }
+
+        .inbox span {
+            position: absolute;
+            left: 14px;
+            bottom: 11px;
+            padding: 2px;
+            font-size: 1em;
+            color: #6c6a6a;
+            text-transform: uppercase;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .inbox input:valid~span,
+        .inbox input:focus~span {
+            color: black;
+            background: aqua;
+            transform: translateX(1px) translateY(-20px);
+            color: aqua;
+            background-color: #1d2b3a;
+            /* border-radius: 5px; */
+            border-left: 1px solid aqua;
+            border-right: 1px solid aqua;
+            letter-spacing: 2px;
+            font-size: 0.65em;
+        }
+
+        .inbox input:focus {
+            border: 1px solid aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inbox">
+        <input type="text" required="required">
+        <span>first name</span>
+    </div>
+
+    <div class="inbox">
+        <input type="text" required="required">
+        <span>last name</span>
+    </div>
+</body>
+
+</html>

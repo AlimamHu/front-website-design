@@ -7,6 +7,9 @@ html{
     font-size: 10px;
     /* 1rem = 10px */
 }
+.box{
+   display: flex;
+}
  .container{
     position: fixed;
     height: 100%;
@@ -89,4 +92,11 @@ body{
       display: none;
    }
    
+}
+
+
+
+
+h1{
+   color: white;
 }

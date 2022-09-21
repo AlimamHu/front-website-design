@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Flip hover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        .container {
+
+            position: absolute;
+            border: 2px solid red;
+            border-radius: 12px;
+         
+      
+            height: 400px;
+            width: 290px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* position: relative; */
+            overflow: hidden;
+
+
+        }
+        #front{
+            background-color: rgb(87, 87, 87);
+        }
+        #back{
+            background-color: rgb(121, 8, 23);
+            transform: rotateX(180deg);
+        }
+        h1{
+            background-color: rgba(107, 65, 65, 0.562);
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="front">
+        <h1>02</h1>
+    </div>
+    <div class="container" id="back">
+        <h1>03</h1>
+    </div>
+</body>
+
+</html>

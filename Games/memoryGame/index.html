@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docu ty</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            background-color: aquamarine;
+
+        }
+
+        #submit_section {
+            display: none;
+        }
+
+        input {
+            height: 30px;
+            width: 301px;
+        }
+        button{
+            height: 34px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <h1 id="random_nubmer">Remmber me: <span id="change_random"></span></h1>
+    <form id="submit_section">
+
+        <input type="text" id="inputdata">
+        <button type="button" onclick="hello_data()">submit</button>
+
+
+    </form>
+    <p id="result"></p>
+    <script>
+        // String(Math.random())[3] 
+        random_data = String(Math.random())[3]
+        
+        document.getElementById("change_random").innerHTML = random_data
+
+
+        //   for get data and commpare values
+        const hello_data = () => {
+
+            submit_data = document.getElementById("inputdata").value
+            if (submit_data == random_data) {
+                document.getElementById("submit_section").style.display = "none"
+                document.getElementById('result').innerHTML = "you pass"
+            } else {
+                document.getElementById("submit_section").style.display = "none"
+                document.getElementById('result').innerHTML = "you fail"
+            }
+        }
+        setTimeout(hide_data, 3000)
+
+        function hide_data() {
+            document.getElementById("random_nubmer").style.display = "none"
+            document.getElementById("submit_section").style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

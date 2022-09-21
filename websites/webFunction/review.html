@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Review</title>
+    <style>
+        body {
+            background-color: #f0fffa;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            /* flex-direction: ; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            padding: 20px;
+            width: 50vw;
+            text-align: center;
+            transform: translateY(-90%);
+
+        }
+
+        .card {
+            /* height: 40vh; */
+            /* border: 2px solid red; */
+
+            background-color: blueviolet;
+        }
+
+        .card h4 {
+            text-transform: uppercase;
+            font-size: 30px;
+            height: 50px;
+            background-color: #f0fffa;
+            width: 40%;
+            margin: 20px auto;
+            border-radius: 50%;
+
+        }
+
+        .cards {
+            position: relative;
+        }
+        .cards button:active{
+            
+            transition: 2s;
+        }
+
+        .card {
+            position: absolute;
+        }
+
+        #first {
+            z-index: 3;
+        }
+        .card.second{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Review</h1>
+        <div class="cards">
+            <div id="first" class="card first">
+                <h4>suzan</h4>
+                <h5>developer</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat! Lorem ipsum dolor
+                    sit
+                    amet consectetur adipisicing elit. Deleniti, omnis! Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Nihil, doloribus?
+                </p>
+                <button type="button" onclick="reducer()">previouse</button>
+                <button type="button" onclick="adder()">next</button>
+            </div>
+            <div class="card second">
+                <h4>darlin</h4>
+                <h5>web developer</h5>
+                <p>r adipisicing elit. Deleniti, omnis! Lorem Lorem,
+                    amet consectetu ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Nihil, do ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repellat! Lorem ipsum dolor
+                    sitloribus?
+                </p>
+                <button type="button" onclick="reducer()">previouse</button>
+                <button type="button" onclick="adder()">next</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const reducer=()=>{
+            const elements =document.getElementById("first")
+            elements.style.zIndex=-1;
+            
+
+        }
+        const adder=()=>{
+            const elements =document.getElementById("first")
+            elements.style.zIndex=+4;
+
+
+        }
+    </script>
+</body>
+
+</html>

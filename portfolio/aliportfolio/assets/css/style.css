@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-pera:rgba(255, 255, 255, 0.452);
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-base: #051113;
+    --color-base2: #071214;
+    /* --color-brand: #e0f780; */
+    --color-brand: rgb(94, 248, 248);
+    /* --color-brand2: #deff58; */
+    --color-brand2: aqua;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+/* card */
+.my-border-1{
+    border-top: 2px solid rgb(0, 255, 234);
+    border-bottom: 2px solid rgb(0, 255, 234);
+}
+.my-border-2{
+    border-top: 2px solid rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(255, 0, 0);
+    
+}
+/* .my-broder-2 */
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+    box-shadow: 10px 10px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--color-brand);
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+    
+}
+
+
+/* BTN */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+    
+}
+.btn-shadow{
+    box-shadow: 0 0 18px 3px rgba(94, 248, 248, 0.66);
+}
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* custme */
+.seprate_text{
+    letter-spacing: 6px;
+    color: var(--color-pera);
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: rgba(0, 255, 255, 0.212);
+    color: var(--color-body);
+    outline: none;
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+.inbox{
+    position: relative;
+}
+.inbox span{
+    position: absolute;
+    top: 9px;
+    left: 22px;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: 0.5s;
+    padding: 2px;
+    pointer-events: none;
+    font-family: var(--font-base);
+}
+
+#contact .form-control:valid ~span,
+#contact .form-control:focus ~ span{
+    color: aqua;
+    transform: translateX(10px) translateY(-20px);
+    background-color: #1d2b3a;
+    background-color: var(--color-base2);
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+    letter-spacing: 3px;
+    font-size: 0.65em;
+    color: black;
+    background: aqua;
+    font-weight: bold;
+
+}
+#contact .form-control:focus {
+    border: 1px solid aqua;
+}
+
+/* SOCIAL ICONS */
+ 
+.lastfont{
+    color:var(--color-brand2);
+    /* text-decoration: underline; */
+}
+.lastfontBold{
+    color:var(--color-brand2);
+    font-weight: bold;
+}
+.social-icons {
+
+}
+
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+.social-icons a:hover{
+   transform: rotate(360deg);
+}
+
+.scroller{
+    position: fixed;
+    bottom: 300px;
+    right: 30px;
+    writing-mode: vertical-rl;
+    /* left: 30px; */
+    font-size: 1em;
+}
+
+
+.data_scrooler {
+    position: fixed;
+    animation: scroller 1s ease-in-out infinite;
+
+    writing-mode: vertical-rl;
+    text-transform: lowercase;
+
+}
+@keyframes scroller {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+.cursor{
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* color: white; */
+    background-color: aqua;
+    transition: 0.4s;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    box-shadow: 0 0 8px 16px rgba(255, 255, 255, 0.377),
+    0 0 12px 24px rgba(255, 255, 255, 0.096);
+    box-shadow: 0 0 8px 16px rgba(0, 255, 255, 0.486),
+    0 0 12px 24px rgba(0, 255, 255, 0.116);
+}
